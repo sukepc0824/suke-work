@@ -7,8 +7,8 @@
   ],
   "redirects": [
     {
-      "source": "/:path*",
-      "destination": "/api/redirect/:path*",
+      "source": "/((?!api/redirect).*)",
+      "destination": "/api/redirect/$1",
       "permanent": false
     }
   ]
