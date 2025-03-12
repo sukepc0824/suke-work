@@ -36,12 +36,10 @@ async function renderArticle(projects){
     let dom = new DOMParser().parseFromString(text, "text/html")
     projects.forEach(element => {
         let article = dom.querySelector("article").cloneNode(true)
-        if (element.type === "app"){
-            article.querySelector("a").href = "" //保留
-        }
         article.querySelector("a").href = element.url
         article.querySelector("img").src = `./data/img/${element.slug}.png`
         article.querySelector("h2").innerText = element.name
+        article.querySelector("h3").innerText = element.date
         article.querySelector("p").innerText = element.description
 
         document.querySelector("main").appendChild(article)

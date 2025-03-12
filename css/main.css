@@ -48,5 +48,27 @@ article a {
 
 
 footer {
-    padding: 30px;
+    padding: 24px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 0;
+}
+
+article .title {
+    display: flex;
+    gap: 2px;
+}
+
+article h3 {
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+article h3::before {
+    content: "・";
 }

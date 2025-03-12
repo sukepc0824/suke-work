@@ -6,7 +6,7 @@
         "description": "漢字を組み合わせて創作漢字ができるエディタ。",
         "url": "https://kumiji.vercel.app/",
         "src": "https://github.com/sukepc0824/kumiji",
-        "date": "2025-1-12"
+        "date": "JAN 2025"
     },
     {
         "name": "凹凸のある数字",
@@ -15,7 +15,7 @@
         "description": "円錐グラデーションで輪郭を表現する手法研究。",
         "url": "https://x.com/pcsuke/status/1857736498361282698",
         "src": "",
-        "date": "2025-1-12"
+        "date": "NOV 2024"
     },
     {
         "name": "数学の視覚化 1",
@@ -24,7 +24,7 @@
         "description": "映像で数学の等比数列の性質を表現する。",
         "url": "https://x.com/pcsuke/status/1862793694078013921",
         "src": "",
-        "date": "2024-12-24"
+        "date": "DEC 2024"
     },
     {
         "name": "Quick Searcher",
@@ -33,7 +33,7 @@
         "description": "検索を高速化するランチャーのブラウザ拡張機能。",
         "url": "https://x.com/pcsuke/status/1862793694078013921",
         "src": "https://chromewebstore.google.com/detail/quicksearcher/cphaocpmlfjmgjgnpemcpbepdcjjidha",
-        "date": "2024-12-24"  
+        "date": "OCT 2024"  
     },
     {
         "name": "マスmatics",
@@ -42,7 +42,7 @@
         "description": "数学パズルゲーム。第5回学力向上アプリコンテスト最優秀賞。",
         "url": "https://masu-matics.vercel.app/",
         "src": "https://github.com/sukepc0824/masu-matics",
-        "date": "2024-12-24"
+        "date": "OCT 2024"
     },
     {
         "name": "ビビビビ/frog96 自主制作MV",
@@ -51,6 +51,6 @@
         "description": "Windows標準フォント縛りで作成。Windowsを侮るなかれ。",
         "url": "https://x.com/pcsuke/status/1773661377980154214",
         "src": "https://github.com/sukepc0824/masu-matics",
-        "date": "2024-12-24"
+        "date": "MAR 2024"
     }
 ]
