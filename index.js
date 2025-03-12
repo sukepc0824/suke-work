@@ -2,33 +2,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
         const response = await fetch("./data/data.json");
         const projects = await response.json();
-
-        const container = document.getElementById("portfolio");
-        const projectContainer = document.getElementById("project-detail");
-
-        const path = window.location.pathname.replace(/^\//, "");
-
-        projects.forEach(element => {
-            if (element.slug === path && element.type === "app") {
-                redirectApp(element)
-            } else {
-                renderHome()
-            }
-        })
-
         renderArticle(projects)
     } catch (error) {
         console.error("Error loading projects:", error);
     }
 });
-
-function redirectApp(element){
-    location.replace(element.url)
-}
-
-function renderHome() {
-
-}
 
 async function renderArticle(projects){
     const data = await fetch("./template/article.html")
