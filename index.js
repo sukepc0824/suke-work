@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         projects.forEach(element => {
             if (element.slug === path && element.type === "app") {
-                renderApp(element)
+                redirectApp(element)
             } else {
                 renderHome()
             }
@@ -22,14 +22,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 });
 
-async function renderApp(element){
-    const data = await fetch("./template/app.html")
-    const text = await data.text()
-    let dom = new DOMParser().parseFromString(text, "text/html")
-    dom.querySelector("iframe").src = element.url
-    document.querySelector("body").appendChild(dom.querySelector("main"))
-    const comment = document.createComment(`For Developers / src:"${element.src}"`)
-    document.body.appendChild(comment)
+function redirectApp(element){
+    location.replace(element.url)
 }
 
 function renderHome() {
