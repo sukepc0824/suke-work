@@ -37,7 +37,7 @@ async function renderArticle(projects){
     projects.forEach(element => {
         let article = dom.querySelector("article").cloneNode(true)
         article.querySelector("a").href = element.url
-        article.querySelector("img").src = `./data/img/${element.slug}.png`
+        article.querySelector("img").src = `./data/img/${element.slug}.jpg`
         article.querySelector("h2").innerText = element.name
         article.querySelector("h3").innerText = element.date
         article.querySelector("p").innerText = element.description
