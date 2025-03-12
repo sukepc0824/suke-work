@@ -27,6 +27,15 @@
         "date": "2024-12-24"
     },
     {
+        "name": "Quick Searcher",
+        "type": "service",
+        "slug": "quick_searcher",
+        "description": "検索を高速化するランチャーのブラウザ拡張機能。",
+        "url": "https://x.com/pcsuke/status/1862793694078013921",
+        "src": "https://chromewebstore.google.com/detail/quicksearcher/cphaocpmlfjmgjgnpemcpbepdcjjidha",
+        "date": "2024-12-24"  
+    },
+    {
         "name": "マスmatics",
         "type": "app",
         "slug": "masu-matics",

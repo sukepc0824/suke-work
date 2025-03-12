@@ -1,0 +1,16 @@
+{
+    "name": "suke-work",
+    "version": "1.0.0",
+    "description": "suke-work on vercel",
+    "scripts": {
+      "dev": "vercel dev",
+      "build": "vercel build",
+      "start": "vercel serve"
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "engines": {
+      "node": ">=18"
+    }
+  }
+  

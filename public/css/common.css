@@ -6,6 +6,10 @@
 
 header {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 856px;
 }
 
 h1 {
@@ -13,12 +17,12 @@ h1 {
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
 }
 
 p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 iframe.app {

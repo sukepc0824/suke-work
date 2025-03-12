@@ -2,19 +2,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fefefe;
 }
 
 h1 {
-    padding: 20px 0;
+    width: 100%;
 }
 
 main {
     width: 100%;
-    max-width: 792px;
+    max-width: 856px;
     padding: 0 16px;
     flex-wrap: wrap;
     display: flex;
-    gap: 32px;
+    gap: 40px 32px;
 }
 
 article {
@@ -24,7 +25,9 @@ article {
 }
 
 article img {
-    margin-bottom: 11px;
+    margin-bottom: 8px;
+    aspect-ratio: 16 / 9;
+    box-shadow:0 0 0 1px #aaa inset;
 }
 
 article a {
@@ -34,11 +37,16 @@ article a {
     gap: 4px;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:664px) {
     main {
-        max-width: 512px;
+        max-width: 576px;
     }
     article {
         width: 100%;
     }
+}
+
+
+footer {
+    padding: 30px;
 }
