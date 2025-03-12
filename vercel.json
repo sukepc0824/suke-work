@@ -5,12 +5,5 @@
       "src": "public/**/*",
       "use": "@vercel/static"
     }
-  ],
-  "redirects": [
-    {
-      "source": "/((?!api/redirect).*)",
-      "destination": "/api/redirect/$1",
-      "permanent": false
-    }
   ]
 }
