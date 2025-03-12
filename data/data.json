@@ -61,5 +61,14 @@
         "url": "https://pendulum.suke.work",
         "src": "https://github.com/sukepc0824/kumiji",
         "date": "SEP 2023"
+    },
+    {
+        "name": "Adobe-like icon Generator",
+        "type": "app",
+        "slug": "adobe",
+        "description": "Adobe風のアイコンを生成できる小ネタ的ツール。",
+        "url": "https://adobe.suke.work",
+        "src": "https://github.com/sukepc0824/Adobe-like-icon-Generator",
+        "date": "MAR 2023"
     }
 ]
