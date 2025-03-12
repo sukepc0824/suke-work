@@ -3,9 +3,7 @@
     "version": "1.0.0",
     "description": "suke-work on vercel",
     "scripts": {
-      "dev": "vercel dev",
-      "build": "vercel build",
-      "start": "vercel serve"
+      "build": "echo 'No build step required'"
     },
     "dependencies": {},
     "devDependencies": {},
