@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", async () => {
     try {
-        const response = await fetch("./data/data.json");
-        const projects = await response.json();
-        renderArticle(projects)
+        const response = await fetch("./data/data.yaml");
+        const projects = await response.text();
+        renderArticle(YAML.parse(projects))
     } catch (error) {
         console.error("Error loading projects:", error);
     }
 });
 
-async function renderArticle(projects){
+async function renderArticle(projects) {
     const data = await fetch("./template/article.html")
     const text = await data.text()
     let dom = new DOMParser().parseFromString(text, "text/html")
