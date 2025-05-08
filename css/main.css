@@ -72,3 +72,14 @@ article h3 {
 article h3::before {
     content: "・";
 }
+
+
+@media print {
+    header {
+        display: none;
+    }
+
+    article {
+        page-break-before: avoid;
+    }
+}
