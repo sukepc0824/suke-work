@@ -1,4 +1,14 @@
 -
+    name: "KUMIJI Taiwan"
+    name-en: "KUMIJI Taiwan"
+    type: "app"
+    slug: "kumiji-tw"
+    description: "台湾での展示「宜蘭藝術自造祭」に向けてKUMIJIの繁体字版を制作。(協力:Condé Nast Taiwan)"
+    description-en: "Created a Traditional Chinese version of KUMIJI for the exhibition 'Yilan Art Maker Festival' in Taiwan."
+    url: "https://tw.kumiji.suke.work"
+    src: "https://github.com/sukepc0824/kumiji"
+    date: "JUL 2025"
+-
     name: "KUMIJI 1.0"
     name-en: "KUMIJI 1.0"
     type: "app"
