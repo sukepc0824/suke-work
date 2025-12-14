@@ -14,7 +14,7 @@ header {
 }
 
 h1 {
-    font-size:32px;
+    font-size: 32px;
 }
 
 h2 {
@@ -24,6 +24,7 @@ h2 {
 
 p {
     font-size: 15px;
+    line-height: 1.5;
 }
 
 iframe.app {
