@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/(.*\\.css)", "destination": "/$1" },
+    { "source": "/data/(.*)", "destination": "/data/$1" },
+    { "source": "/index.js", "destination": "/index.js" },
+    { "source": "/(.*)", "destination": "/api/index.py" }
+  ]
+}
