@@ -27,7 +27,7 @@ article {
 article img {
     margin-bottom: 8px;
     aspect-ratio: 16 / 9;
-    box-shadow:0 0 0 1px #aaa inset;
+    box-shadow: 0 0 0 1px #aaa inset;
     border: 1px solid #ccc;
     border-radius: 7px;
 }
@@ -43,6 +43,7 @@ article a {
     main {
         max-width: 576px;
     }
+
     article {
         width: 100%;
     }
@@ -51,6 +52,8 @@ article a {
 
 footer {
     padding: 24px;
+    margin-top: 16px;
+    color: #aaa;
 }
 
 section {
