@@ -33,6 +33,10 @@ def index_en():
     projects = load_data()
     return render_template('en.html', projects=projects)
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return send_from_directory(os.path.join(os.path.dirname(__file__), '..'), '404.html'), 404
+
 if __name__ == '__main__':
     app.run(debug=True)
     
