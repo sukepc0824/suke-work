@@ -1,4 +1,15 @@
 -
+    name: "Webcam Conductor"
+    name-en: "Webcam Conductor"
+    type: "app"
+    slug: "webcam-conductor"
+    description: "指揮者になって音楽を操る体験ができるアプリ。MediaPipeで手の動きをトラッキングしている。"
+    description-en: "An app that lets you experience being a conductor and control music. Tracks hands with MediaPipe."
+    url: "https://webcam-conductor.suke.work"
+    src: "https://github.com/sukepc0824/webcam-conductor"
+    date: "MAR 2026"
+
+-
     name: "KUMIJI Taiwan"
     name-en: "KUMIJI Taiwan"
     type: "app"
