@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.about_title }}{% endblock %}
+
+{% block head %}
+<meta name="description"
+    content="{% if lang == 'ja' %}木崎 公亮 (きざき こうすけ) 2008年生まれ。インターフェース・映像・教育の新しい表現や体験の方法を、プログラミングなどの理数的な視点から実装しています。{% else %}Kosuke Kizaki (born in 2008). I implement new ways of expressing and experiencing interfaces, video, and education from mathematical and scientific perspectives.{% endif %}">
+<style>
+    main {
+        padding: 0 36px;
+    }
+
+    section {
+        display: flex;
+        gap: 16px;
+    }
+
+    section p {
+        margin-bottom: 8px;
+    }
+
+    img {
+        width: 96px;
+        height: 96px;
+        border-radius: 100%;
+        flex-shrink: 0;
+    }
+
+    section a {
+        font-size: 15px;
+        display: block;
+        margin: 11px 0;
+        text-decoration: underline;
+        width: fit-content;
+    }
+
+    h2 {
+        margin-top: 36px;
+        font-weight: 400;
+    }
+
+    ul {
+        list-style: disc;
+    }
+
+    ul.link {
+        list-style-type: "-> ";
+    }
+
+    ul.link a {
+        margin: 0;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<section>
+    <img src="https://pbs.twimg.com/profile_images/1496298933395800064/lri7DJ9o_400x400.jpg" alt="pcsuke icon">
+    <div class="content">
+        <p>{% if lang == 'ja' %}木崎 公亮 (きざき こうすけ){% else %}Kosuke Kizaki{% endif %}</p>
+        <p>
+            {% if lang == 'ja' %}
+            2008年生まれ。<br>インターフェース・映像・教育の新しい表現や体験の方法を、プログラミングなどの理数的な視点から実装しています。数学やアルゴリズム、プログラミングのような、モノの持つ根源的な面白さを理解してもらうことに重点を置いてさまざまな創作活動を行っています。
+            {% else %}
+            Born in 2008.<br>I implement new ways of expressing and experiencing interfaces, video, and education from
+            mathematical and scientific perspectives such as programming. I engage in various creative activities with
+            an emphasis on helping people understand the fundamental interest of things like mathematics, algorithms,
+            and programming.
+            {% endif %}
+        </p>
+        <ul class="link">
+            <li>
+                <a href="mailto:sukepc0824@gmail.com" style="margin-top: 16px;">{{ t.contact }}</a>
+            </li>
+            <li>
+                <a href="https://x.com/pcsuke">X (Twitter)</a>
+            </li>
+            <li>
+                <a href="https://github.com/sukepc0824">Github</a>
+            </li>
+        </ul>
+        <h2>{{ t.research_title }}</h2>
+        <ul>
+            <li style="margin-top: 6px;">
+                <p>{% if lang == 'ja' %}中学校・高等学校教員のためのテスト作成支援ソフトウェアの開発{% else %}Development of Test Creation Support
+                    Software for Junior and Senior High School Teachers{% endif %}</p>
+                <p class="sub">{% if lang == 'ja' %}第7回中高生情報学研究コンテスト 優良賞{% else %}7th Junior and Senior High School
+                    Informatics Research Contest, Excellence Award{% endif %}</p>
+                <a class="sub" href="https://www.ipsj.or.jp/event/taikai/87/87PosterSession/ipsj_poster/pdf/8047.pdf">
+                    {% if lang == 'ja' %}ポスター(pdf)...{% else %}Poster (pdf)...{% endif %}</a>
+            </li>
+            <li>
+                <p>{% if lang == 'ja' %}五度圏を用いたインタラクティブな楽器インターフェースの開発{% else %}Development of an Interactive Musical
+                    Instrument Interface Using the Circle of Fifths{% endif %}</p>
+                <p class="sub">{% if lang == 'ja' %}中山隼雄科学技術文化財団 2025年度次世代研究者助成事業採択<br>第8回中高生情報学研究コンテスト 奨励賞{% else
+                    %}Nakayama Hayao Memorial Foundation for Science, Technology and Culture FY2025 Next Generation
+                    Researcher Grant Program Selection<br>8th Junior and Senior High School Informatics Research
+                    Contest, Incentive Award{% endif %}</p>
+                <div style="display: flex; gap: 8px;">
+                    <a class="sub"
+                        href="https://www.ipsj.or.jp/event/taikai/88/88PosterSession/ipsj_poster/pdf/8089.pdf">
+                        {% if lang == 'ja' %}ポスター(pdf)...{% else %}Poster (pdf)...{% endif %}</a>
+                    <a class="sub" href="https://www.youtube.com/watch?v=U3DJJBfP0TY">
+                        {% if lang == 'ja' %}口頭発表(動画)...{% else %}Oral Presentation (Video)...{% endif %}</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

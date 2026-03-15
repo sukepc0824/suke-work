@@ -9,10 +9,6 @@
       "destination": "/data/$1"
     },
     {
-      "source": "/lang.js",
-      "destination": "/lang.js"
-    },
-    {
       "source": "/(.*)",
       "destination": "/api/index.py"
     }

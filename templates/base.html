@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Suke Work{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/data/favicon.ico" type="image/x-icon">
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            {% if request.path == '/' or request.path == '/index.html' %}
+            <p>Suke スケ</p>
+            {% else %}
+            <a href="/">&lt;- Work</a>
+            {% endif %}
+        </div>
+        <nav style="display: flex; gap: 26px; align-items: center;">
+            <div class="lang-switch" style="font-size: 14px;">
+                <a href="?lang=ja" style="{{ 'opacity:1;' if lang == 'ja' else 'opacity:0.4;' }}">JA</a>
+                /
+                <a href="?lang=en" style="{{ 'opacity:1;' if lang == 'en' else 'opacity:0.4;' }}">EN</a>
+            </div>
+            {% if request.path == '/' or request.path == '/index.html' %}
+            <a href="/about.html">About -&gt;</a>
+            {% endif %}
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        &copy;pcsuke 2026
+    </footer>
+</body>
+
+</html>
