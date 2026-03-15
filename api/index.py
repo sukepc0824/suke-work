@@ -10,7 +10,7 @@ TRANSLATIONS = {
         'work_desc': 'インターフェース・映像・教育の「新しい」表現や体験の方法をプログラミングなどの理数的な視点から実装しています。',
         'about_title': 'About Suke(木崎 公亮)',
         'contact': 'Contact (Mail)',
-        'research_title': '研究活動/Research',
+        'research_title': '研究活動',
     },
     'en': {
         'work_title': 'Work',
